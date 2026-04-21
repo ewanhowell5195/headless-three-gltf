@@ -77,4 +77,4 @@ The stock `GLTFLoader`, modified to work with headless-three. See the [Three.js 
 
 MIT © [Ewan Howell](https://ewanhowell.com/)
 
-Vendors `GLTFLoader.js` and `BufferGeometryUtils.js` from [Three.js](https://github.com/mrdoob/three.js) (MIT, © 2010–2024 three.js authors). See [`vendor/LICENSE`](vendor/LICENSE).
+Vendors `GLTFLoader.js` and `BufferGeometryUtils.js` from [Three.js](https://github.com/mrdoob/three.js) (MIT, © 2010–2024 three.js authors). See [`vendor/LICENSE`](vendor/LICENSE.txt).
