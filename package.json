@@ -1,6 +1,6 @@
 {
   "name": "headless-three-gltf",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "GLTFLoader for headless-three.",
   "author": "Ewan Howell <ewanhowell5195>",
   "license": "MIT",
