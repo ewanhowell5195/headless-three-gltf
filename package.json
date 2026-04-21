@@ -1,0 +1,38 @@
+{
+  "name": "headless-three-gltf",
+  "version": "1.0.0",
+  "description": "GLTFLoader for headless-three.",
+  "author": "Ewan Howell <ewanhowell5195>",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "vendor/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewanhowell5195/headless-three-gltf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ewanhowell5195/headless-three-gltf/issues"
+  },
+  "peerDependencies": {
+    "headless-three": "^1.5.0"
+  },
+  "keywords": [
+    "three",
+    "threejs",
+    "three.js",
+    "gltf",
+    "gltfloader",
+    "loader",
+    "headless",
+    "headless-three",
+    "node",
+    "server-side"
+  ]
+}
