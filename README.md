@@ -32,8 +32,8 @@ import { Canvas, Image, ImageData } from "skia-canvas"
 import getTHREE from "headless-three"
 import initGLTF from "headless-three-gltf"
 
-const three = await getTHREE({ Canvas, Image, ImageData })
-const { loadGLTF } = initGLTF(three)
+const { THREE, render } = await getTHREE({ Canvas, Image, ImageData })
+const { loadGLTF } = initGLTF(THREE)
 
 const gltf = await loadGLTF("path/to/model.gltf")
 
@@ -41,7 +41,7 @@ const scene = new THREE.Scene()
 scene.add(gltf.scene)
 
 // Render with headless-three
-await three.render({
+await render({
   scene,
   camera,
   width: 512,
@@ -52,9 +52,9 @@ await three.render({
 
 ## API
 
-### `initGLTF(three)`
+### `initGLTF(THREE)`
 
-Takes the object returned by `getTHREE(...)`, wires `GLTFLoader` into its VM context, and returns `{ loadGLTF, GLTFLoader }`. Both are also attached to the passed-in `three` object for convenience.
+Takes the `THREE` object returned by `getTHREE(...)`, wires `GLTFLoader` into its VM context, and returns `{ loadGLTF, GLTFLoader }`. Both are also attached to `THREE.headless` for convenience.
 
 | Returns | Description |
 |---|---|
@@ -63,14 +63,11 @@ Takes the object returned by `getTHREE(...)`, wires `GLTFLoader` into its VM con
 
 ### `loadGLTF(path)`
 
-Loads a `.gltf` or `.glb` file from disk.
+Loads a `.gltf` or `.glb` file from disk. Returns the same parsed object [`GLTFLoader.load`](https://threejs.org/docs/#examples/en/loaders/GLTFLoader) does.
 
 ```js
 const gltf = await loadGLTF("./model.gltf")
-gltf.scene       // THREE.Group
-gltf.animations  // THREE.AnimationClip[]
 ```
-
 
 ### `GLTFLoader`
 

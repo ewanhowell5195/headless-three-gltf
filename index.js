@@ -17,8 +17,8 @@ const mimeTypes = {
   ".basis": "image/basis"
 }
 
-export default function initGLTF(three) {
-  const { THREE, runInContext } = three
+export default function initGLTF(THREE) {
+  const { runInContext } = THREE.headless
   const vmGlobal = runInContext("globalThis")
 
   vmGlobal.THREE = THREE
@@ -43,7 +43,7 @@ export default function initGLTF(three) {
     })
   }
 
-  three.loadGLTF = loadGLTF
-  three.GLTFLoader = GLTFLoader
+  THREE.headless.loadGLTF = loadGLTF
+  THREE.headless.GLTFLoader = GLTFLoader
   return { loadGLTF, GLTFLoader }
 }
