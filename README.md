@@ -5,7 +5,7 @@ Load `.gltf` and `.glb` models on the server with no browser required.
 Uses the stock `GLTFLoader`, modified to work with headless-three.
 
 [![npm version](https://badge.fury.io/js/headless-three-gltf.svg)](https://www.npmjs.com/package/headless-three-gltf)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Features
 
@@ -75,6 +75,6 @@ The stock `GLTFLoader`, modified to work with headless-three. See the [Three.js 
 
 ## License
 
-MIT © [Ewan Howell](https://ewanhowell.com/)
+[MPL-2.0](LICENSE) © [Ewan Howell](https://ewanhowell.com/)
 
 Vendors `GLTFLoader.js` and `BufferGeometryUtils.js` from [Three.js](https://github.com/mrdoob/three.js) (MIT, © 2010–2024 three.js authors). See [`vendor/LICENSE`](vendor/LICENSE.txt).

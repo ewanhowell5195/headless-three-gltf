@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "description": "GLTFLoader for headless-three.",
   "author": "Ewan Howell <ewanhowell5195>",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "type": "module",
   "main": "index.js",
   "exports": {
